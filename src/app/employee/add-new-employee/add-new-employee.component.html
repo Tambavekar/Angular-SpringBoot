@@ -1,0 +1,23 @@
+<p>add-new-Product-Id</p>
+
+<hr>
+
+<form (submit)="addNewProduct()">
+  <label >Product Id</label>
+  <input type="text" name="productId" [(ngModel)]="product.productId">
+  <br><br>
+
+  <label >Product Name</label>
+  <input type="text" name="productName" [(ngModel)]="product.productName">
+  <br><br>
+
+  <label>Price</label>
+  <input type="text" name="price"[(ngModel)]="product.price">
+  <br><br>
+
+  <label >Category Id</label>
+  <input type="text" name="catId" [(ngModel)]="product.category.catId">
+  <br><br>
+
+  <input type="submit" value="Add New Employee">
+</form>
