@@ -27,4 +27,22 @@ public class AddressService implements AddressDetailServiceInterface {
 		return addressDetailsRepository.getAllAddresses();
 	}
 
+	@Override
+	public boolean deleteAddressByAddressId(int addressId) {
+		// TODO Auto-generated method stub
+		return addressDetailsRepository.deleteAddressByAddressId(addressId);
+	}
+
+	@Override
+	public Address getAddressByAddressId(int addressId) {
+		// TODO Auto-generated method stub
+		return addressDetailsRepository.getAddressByAddressId(addressId);
+	}
+
+	@Override
+	public boolean updateByAddressId(Address address) {
+		// TODO Auto-generated method stub
+		return addressDetailsRepository.updateByAddressId(address);
+	}
+
 }
